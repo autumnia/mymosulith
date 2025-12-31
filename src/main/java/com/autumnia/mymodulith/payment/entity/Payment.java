@@ -16,7 +16,7 @@ public class Payment {
     private Long id;
 
     private String orderId;
-    private Long amount;
+    private long amount;
     private Timestamp paymentDate = Timestamp.from(Instant.now());
     private PaymentStatus status = PaymentStatus.INCOMPLETED;
 }

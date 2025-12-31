@@ -1,13 +1,16 @@
 package com.autumnia.mymodulith;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.modulith.core.ApplicationModules;
+import org.springframework.modulith.test.ApplicationModuleTest;
 
-@SpringBootTest
+@ApplicationModuleTest
+//@SpringBootTest
 class MymodulithApplicationTests {
 
 	@Test
 	void contextLoads() {
+		ApplicationModules.of(MymodulithApplication.class).verify();
 	}
 
 }

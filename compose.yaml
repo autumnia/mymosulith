@@ -1,1 +1,15 @@
-services: {}
+services:
+  postgres:
+    container_name: postgres_md
+    image: 'postgres:16.2'
+    environment:
+      - 'POSTGRES_DB=spring_modulith'
+      - 'POSTGRES_USER=modulith'
+      - 'POSTGRES_PASSWORD=modulith'
+    ports:
+      - "5432:5432"
+    volumes:
+      - /c/tmp/postgres_modulith:/var/lib/postgresql/data
+
+volumes:
+  postgres:

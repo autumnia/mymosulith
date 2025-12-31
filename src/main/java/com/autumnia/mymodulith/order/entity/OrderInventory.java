@@ -17,8 +17,8 @@ public class OrderInventory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long orderId;
-    private Long inventoryId;
+    private long orderId;
+    private long inventoryId;
     private int qty;
-    private Long totalQtyPrice;
+    private long totalQtyPrice;
 }
